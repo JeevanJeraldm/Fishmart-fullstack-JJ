@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-sky-100 to-blue-200 text-gray-800 font-[Inter] min-h-screen;
+  }
+
+  * {
+    @apply m-0 p-0 box-border;
+  }
+}
+
+:root {
+  --primary: #0077cc;
+}
+
+.app {
+  @apply flex flex-col min-h-screen;
+}
+
+main {
+  @apply flex-1 max-w-6xl mx-auto px-6 py-10;
+}
+
+.product-grid {
+  @apply grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8;
+}
+
+.product-card {
+  @apply bg-white rounded-2xl shadow-lg p-5 hover:shadow-2xl transition-all;
+}
+
+.product-card h3 {
+  @apply text-lg font-bold text-sky-700 mb-2;
+}
+
+.price {
+  @apply font-semibold text-sky-600;
+}
+
+.btn {
+  @apply bg-sky-500 hover:bg-sky-600 text-white py-1 px-3 rounded-lg text-sm transition;
+}
