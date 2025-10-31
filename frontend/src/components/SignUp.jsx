@@ -22,6 +22,7 @@ export default function SignUp() {
         body: JSON.stringify({ name, email, password }),
       })
 
+      
       const data = await response.json()
 
       if (!response.ok) {
