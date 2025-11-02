@@ -39,7 +39,7 @@ export function AuthProvider({ children }) {
     if (!token) return;
 
     try {
-      const res = await fetch('http://localhost:5001/api/cart', {
+      const res = await fetch('https://fishmart-fullstack-jj.onrender.com/api/cart', {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -61,7 +61,7 @@ export function AuthProvider({ children }) {
     }
 
     try {
-      const res = await fetch('http://localhost:5001/api/cart', {
+      const res = await fetch('https://fishmart-fullstack-jj.onrender.com/api/cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

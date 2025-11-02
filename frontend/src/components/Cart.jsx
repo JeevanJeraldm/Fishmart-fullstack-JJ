@@ -11,7 +11,7 @@ const Cart = () => {
   // ✅ Fetch cart from backend
   const fetchCart = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/cart");
+      const res = await fetch("https://fishmart-fullstack-jj.onrender.com/api/cart");
       const data = await res.json();
       console.log("Cart API response:", data);
 
@@ -41,7 +41,7 @@ const Cart = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5001/api/cart/update`, {
+      const response = await fetch(`https://fishmart-fullstack-jj.onrender.com/api/cart/update`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ productId, quantity: newQuantity }),
@@ -60,7 +60,7 @@ const Cart = () => {
   // ✅ Remove item
   const handleRemoveItem = async (productId) => {
     try {
-      const response = await fetch(`http://localhost:5001/api/cart/remove`, {
+      const response = await fetch(`https://fishmart-fullstack-jj.onrender.com/api/cart/remove`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ productId }),
@@ -90,7 +90,7 @@ const Cart = () => {
         totalAmount: cartTotal || calculateSubtotal(),
       };
 
-      const response = await fetch("http://localhost:5001/api/orders", {
+      const response = await fetch("https://fishmart-fullstack-jj.onrender.com/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),
@@ -103,7 +103,7 @@ const Cart = () => {
       setSuccess(true);
 
       // 🧹 Clear cart after success
-      await fetch("http://localhost:5001/api/cart", { method: "DELETE" });
+      await fetch("https://fishmart-fullstack-jj.onrender.com/api/cart", { method: "DELETE" });
       setCartItems([]);
       setCartTotal(0);
 

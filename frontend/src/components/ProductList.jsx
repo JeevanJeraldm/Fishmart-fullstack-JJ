@@ -39,8 +39,8 @@ const ProductList = () => {
     product.images && product.images[0]
       ? product.images[0].startsWith("http")
         ? product.images[0]
-        : `http://localhost:5001${product.images[0]}`
-      : "http://localhost:5001/uploads/default.jpg"
+        : `https://fishmart-fullstack-jj.onrender.com${product.images[0]}`
+      : "https://fishmart-fullstack-jj.onrender.com/uploads/default.jpg"
   }
   alt={product.name}
   className="w-full h-48 object-cover rounded"

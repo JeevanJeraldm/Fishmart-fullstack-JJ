@@ -14,7 +14,7 @@ const products = [
       { name: 'Whole', extraCost: 0 }
     ],
     usages: ['Curry', 'Smoke'],
-    images: ['http://localhost:5001/uploads/catla.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/catla.jpg']
   },
   {
     name: 'Crab',
@@ -26,7 +26,7 @@ const products = [
       { name: 'Cleaned', extraCost: 80 }
     ],
     usages: ['Fry', 'Curry', 'Grill'],
-    images: ['http://localhost:5001/uploads/crab.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/crab.jpg']
   },
   {
     name: 'Mackerel',
@@ -39,7 +39,7 @@ const products = [
       { name: 'Fillet', extraCost: 100 }
     ],
     usages: ['Curry', 'Grill', 'Fry'],
-    images: ['http://localhost:5001/uploads/mackrel.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/mackrel.jpg']
   },
   {
     name: 'Pomfret',
@@ -51,7 +51,7 @@ const products = [
       { name: 'Cleaned', extraCost: 30 }
     ],
     usages: ['Fry', 'Curry'],
-    images: ['http://localhost:5001/uploads/pomfret.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/pomfret.jpg']
   },
   {
     name: 'Prawns',
@@ -63,7 +63,7 @@ const products = [
       { name: 'Peeled & Cleaned', extraCost: 100 }
     ],
     usages: ['Curry', 'Fry', 'Grill'],
-    images: ['http://localhost:5001/uploads/prawns.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/prawns.jpg']
   },
   {
     name: 'Rohu',
@@ -75,7 +75,7 @@ const products = [
       { name: 'Steaks', extraCost: 40 }
     ],
     usages: ['Curry', 'Steam', 'Fry'],
-    images: ['http://localhost:5001/uploads/rohu.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/rohu.jpg']
   },
   {
     name: 'Seer Fish (Surmai)',
@@ -87,7 +87,7 @@ const products = [
       { name: 'Fillet', extraCost: 120 }
     ],
     usages: ['Grill', 'Curry', 'Fry'],
-    images: ['http://localhost:5001/uploads/seer.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/seer.jpg']
   },
   {
     name: 'Squid',
@@ -99,7 +99,7 @@ const products = [
       { name: 'Tubes', extraCost: 0 }
     ],
     usages: ['Fry', 'Curry'],
-    images: ['http://localhost:5001/uploads/squid.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/squid.jpg']
   },
   {
     name: 'Tilapia',
@@ -111,7 +111,7 @@ const products = [
       { name: 'Whole', extraCost: 0 }
     ],
     usages: ['Fry', 'Grill', 'Bake'],
-    images: ['http://localhost:5001/uploads/tilapia.jpg']
+    images: ['https://fishmart-fullstack-jj.onrender.com/uploads/tilapia.jpg']
   }
 ];
 
